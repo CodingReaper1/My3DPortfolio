@@ -10,7 +10,9 @@ type ProjectCardTypes = {
   description: string;
   tags: { name: string; color: string }[];
   image: string;
-  source_code_link: string;
+  sourceCodeLink: string;
+  deployedWebLink: string;
+  deploymentServiceImg: string;
 };
 
 function ProjectCard({
@@ -19,7 +21,9 @@ function ProjectCard({
   description,
   tags,
   image,
-  source_code_link,
+  sourceCodeLink,
+  deployedWebLink,
+  deploymentServiceImg,
 }: ProjectCardTypes) {
   return (
     <motion.div variants={fadeIn(["up", "spring", index * 0.5, 0.75])}>
@@ -28,7 +32,7 @@ function ProjectCard({
         tiltMaxAngleX={45}
         transitionSpeed={450}
         scale={1.1}
-        className="tilt w-full rounded-2xl bg-tertiary p-5 will-change-transform sm:w-[360px]"
+        className="w-full rounded-2xl bg-tertiary p-5 will-change-transform sm:w-[360px]"
       >
         <div className="relative h-[230px] w-full">
           <img
@@ -36,9 +40,19 @@ function ProjectCard({
             alt={name}
             className="h-full w-full rounded-2xl object-cover"
           />
-          <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
+          <div className="card-img_hover  absolute inset-0 m-3 flex justify-end gap-1">
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={() => window.open(deployedWebLink, "_blank")}
+              className="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-black"
+            >
+              <img
+                src={deploymentServiceImg}
+                alt="Website deployment service logo"
+                className=" h-full w-full object-contain"
+              />
+            </div>
+            <div
+              onClick={() => window.open(sourceCodeLink, "_blank")}
               className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
             >
               <img
@@ -47,16 +61,6 @@ function ProjectCard({
                 className="h-1/2 w-1/2 object-contain"
               />
             </div>
-            {/* <div
-                onClick={() => window.open(source_code_link, "_blank")}
-                className="black-gradient flex h-10 w-10 cursor-pointer items-center justify-center rounded-full"
-              >
-                <img
-                  src={github}
-                  alt="github"
-                  className="h-1/2 w-1/2 object-contain"
-                />
-              </div> */}
           </div>
         </div>
 
