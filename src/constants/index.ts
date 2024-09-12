@@ -10,11 +10,14 @@ import {
   reactjs,
   redux,
   tailwind,
-  nodejs,
-  mongodb,
+  // nodejs,
+  // mongodb,
   git,
-  figma,
-  docker,
+  // figma,
+  // docker,
+  reactQuery,
+  supabase,
+  framerMotion,
   threejs,
   OasisPhoto,
   PizzaPhoto,
@@ -29,8 +32,8 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -87,29 +90,41 @@ const technologies = [
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
     name: "Three JS",
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Framer Motion",
+    icon: framerMotion,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Supabase",
+    icon: supabase,
   },
+  {
+    name: "React Query",
+    icon: reactQuery,
+  },
+  // {
+  //   name: "Node JS",
+  //   icon: nodejs,
+  // },
+  // {
+  //   name: "MongoDB",
+  //   icon: mongodb,
+  // },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
 ];
 
 // const experiences = [

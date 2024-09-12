@@ -8,7 +8,7 @@ import SectionWrapper from "../../components/SectionWrapper";
 
 function Projects() {
   return (
-    <SectionWrapper>
+    <SectionWrapper idName="projects">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My work</p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>

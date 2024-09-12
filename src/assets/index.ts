@@ -27,6 +27,10 @@ import WayBackPhoto from "./WayBackPhoto.webp";
 import NetlifyLogo from "./netlifyDark.webp";
 import VercelDark from "./Vercel Logo.png";
 
+import framerMotion from "./tech/FramerMotion.jpg";
+import supabase from "./tech/supabase.png";
+import reactQuery from "./tech/react-query.png";
+
 export {
   backend,
   creator,
@@ -54,4 +58,7 @@ export {
   OasisPhoto,
   NetlifyLogo,
   VercelDark,
+  framerMotion,
+  reactQuery,
+  supabase,
 };

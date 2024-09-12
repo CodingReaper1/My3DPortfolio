@@ -60,7 +60,7 @@ function Contact() {
   }
 
   return (
-    <SectionWrapper>
+    <SectionWrapper idName="contact">
       <div className="flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row">
         <motion.div
           variants={slideIn(["left", "tween", 0.2, 1])}
