@@ -30,6 +30,7 @@ import VercelDark from "./Vercel Logo.png";
 import framerMotion from "./tech/FramerMotion.jpg";
 import supabase from "./tech/supabase.png";
 import reactQuery from "./tech/react-query.png";
+import reactRouterDom from "./tech/react-router-dom.png";
 
 export {
   backend,
@@ -61,4 +62,5 @@ export {
   framerMotion,
   reactQuery,
   supabase,
+  reactRouterDom,
 };

@@ -2,10 +2,11 @@ import { motion } from "framer-motion";
 
 import { styles } from "../../styles";
 import ComputersCanvas from "./ComputerCanvas";
+import { TypeAnimation } from "react-type-animation";
 
 function Hero() {
   return (
-    <section className="relative mx-auto h-screen min-h-[50rem] w-full">
+    <section className="relative mx-auto h-screen min-h-[60rem] w-full">
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] mx-auto flex max-w-7xl flex-row items-start gap-5`}
       >
@@ -15,11 +16,17 @@ function Hero() {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915eff]">Giorgi</span>
+            Hi, I'm <br className="block md:hidden" />
+            <TypeAnimation
+              sequence={["Giorgi", 3000, "Gamgebeli", 3000]}
+              speed={50}
+              repeat={Infinity}
+              className="text-[#915eff]"
+              wrapper="span"
+            />
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className="hidden sm:block" />{" "}
-            interfaces and web applications
+            React Front-end developer <br />i develop UI and web applications
           </p>
         </div>
       </div>

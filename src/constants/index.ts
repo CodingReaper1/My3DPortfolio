@@ -24,6 +24,7 @@ import {
   WayBackPhoto,
   NetlifyLogo,
   VercelDark,
+  reactRouterDom,
 } from "../assets";
 
 export const navLinks = [
@@ -82,16 +83,16 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Three JS",
+    icon: threejs,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Redux Toolkit",
+    icon: redux,
   },
   {
     name: "Git",
@@ -108,6 +109,10 @@ const technologies = [
   {
     name: "React Query",
     icon: reactQuery,
+  },
+  {
+    name: "React Router Dom",
+    icon: reactRouterDom,
   },
   // {
   //   name: "Node JS",
