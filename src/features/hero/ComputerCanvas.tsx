@@ -30,7 +30,10 @@ function ComputerCanvas() {
       className="text-red-600"
       frameloop="demand"
       shadows
-      gl={{ preserveDrawingBuffer: true }}
+      gl={{
+        preserveDrawingBuffer: true,
+        pixelRatio: window.innerWidth <= 768 ? 1 : window.devicePixelRatio,
+      }}
     >
       <PerspectiveCamera makeDefault position={[20, 3, 5]} fov={25} />
       <Suspense fallback={<CanvasLoader />}>
