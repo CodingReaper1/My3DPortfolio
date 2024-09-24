@@ -10,7 +10,7 @@ import StarsCanvas from "./features/contact/StarsCanvas";
 function App() {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
+      <div className="relative z-0 overflow-x-hidden bg-primary">
         <div className="bg-hero-pattern bg-cover bg-center bg-no-repeat">
           <Navbar />
           <Hero />
