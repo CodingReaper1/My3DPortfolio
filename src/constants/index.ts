@@ -56,7 +56,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Good With Supabase",
+    title: "Supabase as Backend",
     icon: creator,
   },
 ];

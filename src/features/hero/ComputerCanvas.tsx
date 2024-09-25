@@ -5,7 +5,6 @@ import { OrbitControls, PerspectiveCamera, Preload } from "@react-three/drei";
 
 import CanvasLoader from "../../components/CanvasLoader";
 import Computer3DModel from "./Computer3DModel";
-import Computer3DModelMobile from "./Computer3DModelMobile";
 
 function ComputerCanvas() {
   const [isMobile, setIsMobile] = useState(false);
@@ -51,11 +50,7 @@ function ComputerCanvas() {
           position={isMobile ? [0, -2.5, -2.2] : [0, -3.25, -1.5]}
           rotation={[-0.01, -0.2, -0.1]}
         >
-          {window.innerWidth <= 768 ? (
-            <Computer3DModelMobile />
-          ) : (
-            <Computer3DModel />
-          )}
+          <Computer3DModel />
         </group>
       </Suspense>
 
